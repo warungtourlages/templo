@@ -28,9 +28,9 @@ const IMG = {
 const W = {
   history: [
     { year: 2016, lineup: ["Line-up inaugural"], venue: "soNNora Club", badge: "A Primeira Vez" },
-    { year: 2017, lineup: ["Grandes nomes nacionais"], venue: "Lages Shopping Center", badge: "ConsolidaÃ§Ã£o" },
+    { year: 2017, lineup: ["Grandes nomes nacionais"], venue: "Lages Shopping Center", badge: "Consolidação" },
     { year: 2018, lineup: ["DJs nacionais e internacionais"], venue: "Lages Shopping Center", badge: "Crescimento" },
-    { year: 2019, lineup: ["Line-up histÃ³rico"], venue: "Lages Shopping Center", badge: "PrÃ©-Pandemia" },
+    { year: 2019, lineup: ["Line-up histórico"], venue: "Lages Shopping Center", badge: "Pré-Pandemia" },
     { year: 2022, lineup: ["Kolombo","D-Nox","Zac","Fran Bortolossi","Bianco Vargas"], venue: "Lages Shopping Center", badge: "O Reencontro" },
   ],
   e26: {
@@ -285,19 +285,19 @@ function Cd(){
 
 function Nav({s}){
   const [m,sM]=useState(false);
-  const lk=[["#historia","HistÃ³ria"],["#lineup","Lineup"],["#galeria","Galeria"],["#edicoes","EdiÃ§Ãµes"],["#ingressos","Ingressos"],["#contato","Contato"]];
-  return(<><nav className={`topnav ${s?"s":""}`}><div className="logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><span style={{fontSize:16}}>ðŸ‰</span> WARUNG <span className="w">TOUR</span> LAGES</div><div className="navl">{lk.map(([h,t])=><a key={h} href={h}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="ctab">Ingressos</a></div><button className="mobb" onClick={()=>sM(true)}>â˜°</button></nav>
-  {m&&<div className="mobm"><button className="cx" onClick={()=>sM(false)}>âœ•</button>{lk.map(([h,t])=><a key={h} href={h} onClick={()=>sM(false)}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf" style={{marginTop:10}}>Comprar Ingressos</a></div>}</>);
+  const lk=[["#historia","História"],["#lineup","Lineup"],["#galeria","Galeria"],["#edicoes","Edições"],["#ingressos","Ingressos"],["#contato","Contato"]];
+  return(<><nav className={`topnav ${s?"s":""}`}><div className="logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><span style={{fontSize:16}}>🐉</span> WARUNG <span className="w">TOUR</span> LAGES</div><div className="navl">{lk.map(([h,t])=><a key={h} href={h}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="ctab">Ingressos</a></div><button className="mobb" onClick={()=>sM(true)}>☰</button></nav>
+  {m&&<div className="mobm"><button className="cx" onClick={()=>sM(false)}>✕</button>{lk.map(([h,t])=><a key={h} href={h} onClick={()=>sM(false)}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf" style={{marginTop:10}}>Comprar Ingressos</a></div>}</>);
 }
 
 function Hero(){
   return(<section className="hero" id="home"><div className="hero-img" style={{backgroundImage:`url(${IMG.heroBg})`}}/><div className="hc">
-    <div className="hpill"><span className="dot"/> 4 Anos de Espera â€” O Templo Retorna</div>
+    <div className="hpill"><span className="dot"/> 4 Anos de Espera — O Templo Retorna</div>
     <h1 className="hh1"><span className="l1">WARUNG</span><span className="l2">TOUR LAGES</span></h1>
     <p className="hsub">O Templo na Serra Catarinense</p>
     <div className="hmeta">
       <div className="mi"><div className="lab">Data</div><div className="val">{W.e26.dateShort}</div></div>
-      <div className="mi"><div className="lab">InÃ­cio</div><div className="val">15h â€” 01h</div></div>
+      <div className="mi"><div className="lab">Início</div><div className="val">15h — 01h</div></div>
       <div className="mi"><div className="lab">Local</div><div className="val">Pq. Conta Dinheiro</div></div>
       <div className="mi"><div className="lab">Formato</div><div className="val">Sunset</div></div>
     </div>
@@ -308,17 +308,17 @@ function Hero(){
 function Story(){
   return(<section className="sec sec-d" id="historia"><div className="wrap"><div className="sgrid">
     <div className="stxt">
-      <div className="stag">A HistÃ³ria</div>
-      <h3>Depois de <em>4 anos</em>, o Templo retorna Ã  Serra</h3>
-      <p>Para o povo balinÃªs, Warung significa "casa". O Warung Beach Club, de ItajaÃ­ (SC), Ã© referÃªncia mundial na mÃºsica eletrÃ´nica.</p>
-      <p>Desde 2016, o Warung Tour Lages leva a essÃªncia do Templo para a Serra. Em 2022, apÃ³s a pandemia, horas inesquecÃ­veis de mÃºsica e conexÃ£o marcaram o reencontro.</p>
-      <div className="shl"><p>"Foram 4 anos de espera, e agora o Templo retorna com toda a sua magia, vibe e identidade que marcaram histÃ³ria."</p></div>
-      <p>Em 2026, <strong>nova casa</strong>: o <strong>Parque de ExposiÃ§Ãµes Conta Dinheiro</strong>. Formato Sunset Ã s 15h, decoraÃ§Ã£o balinesa e 2 atraÃ§Ãµes internacionais.</p>
+      <div className="stag">A História</div>
+      <h3>Depois de <em>4 anos</em>, o Templo retorna à Serra</h3>
+      <p>Para o povo balinês, Warung significa "casa". O Warung Beach Club, de Itajaí (SC), é referência mundial na música eletrônica.</p>
+      <p>Desde 2016, o Warung Tour Lages leva a essência do Templo para a Serra. Em 2022, após a pandemia, horas inesquecíveis de música e conexão marcaram o reencontro.</p>
+      <div className="shl"><p>"Foram 4 anos de espera, e agora o Templo retorna com toda a sua magia, vibe e identidade que marcaram história."</p></div>
+      <p>Em 2026, <strong>nova casa</strong>: o <strong>Parque de Exposições Conta Dinheiro</strong>. Formato Sunset às 15h, decoração balinesa e 2 atrações internacionais.</p>
     </div>
     <div className="simgs">
-      <div className="simg"><img src={IMG.historiaPublico2022} alt="PÃºblico 2022"/><div className="il">PÃºblico 2022</div></div>
+      <div className="simg"><img src={IMG.historiaPublico2022} alt="Público 2022"/><div className="il">Público 2022</div></div>
       <div className="simg"><img src={IMG.historiaDjPalco} alt="DJ no palco"/><div className="il">DJ no Palco 2022</div></div>
-      <div className="simg"><img src={IMG.historiaDecoracao} alt="DecoraÃ§Ã£o"/><div className="il">DecoraÃ§Ã£o Warung</div></div>
+      <div className="simg"><img src={IMG.historiaDecoracao} alt="Decoração"/><div className="il">Decoração Warung</div></div>
       <div className="simg"><img src={IMG.historiaLocalNovo} alt="Conta Dinheiro"/><div className="il">Nova Casa 2026</div></div>
     </div>
   </div></div></section>);
@@ -329,7 +329,7 @@ function Lineup(){
   const featured=lu.filter(d=>d.featured);
   const support=lu.filter(d=>!d.featured);
   return(<section className="sec" id="lineup"><div className="wrap">
-    <div className="sh"><div className="stag">EdiÃ§Ã£o 2026</div><h2 className="st">Line<em>-</em>Up</h2><p className="sd">Uma curadoria impecÃ¡vel unindo o som que construiu nossa histÃ³ria com a energia que define o amanhÃ£</p></div>
+    <div className="sh"><div className="stag">Edição 2026</div><h2 className="st">Line<em>-</em>Up</h2><p className="sd">Uma curadoria impecável unindo o som que construiu nossa história com a energia que define o amanhã</p></div>
     <div className="lug">
       {featured.map((dj,i)=>(
         <div key={i} className={`luhc ${dj.tag.includes("NACIONAL")?"lunac":""}`}>
@@ -346,9 +346,9 @@ function Lineup(){
       <div className="lusup">{support.map((dj,i)=>(<div key={i} className="luc"><div className="lucpw"><img src={IMG[dj.img]} alt={dj.name}/></div><div className="lucb"><div className="tag">{dj.tag}</div><div className="nm">{dj.name}</div><div className="or">{dj.origin}</div><div className="ds">{dj.desc}</div></div></div>))}</div>
     </div>
     <div className="vb">
-      <div className="vbi"><div className="ic">ðŸ“</div><h4>Nova Casa</h4><p>Parque de ExposiÃ§Ãµes Conta Dinheiro â€” Lages, SC</p></div>
-      <div className="vbi"><div className="ic">ðŸŒ…</div><h4>Formato Sunset</h4><p>InÃ­cio Ã s 15h â€” Entardecer na Serra em Abril</p></div>
-      <div className="vbi"><div className="ic">ðŸ‰</div><h4>ExperiÃªncia Warung</h4><p>DecoraÃ§Ã£o balinesa, estrutura premium</p></div>
+      <div className="vbi"><div className="ic">📍</div><h4>Nova Casa</h4><p>Parque de Exposições Conta Dinheiro — Lages, SC</p></div>
+      <div className="vbi"><div className="ic">🌅</div><h4>Formato Sunset</h4><p>Início às 15h — Entardecer na Serra em Abril</p></div>
+      <div className="vbi"><div className="ic">🐉</div><h4>Experiência Warung</h4><p>Decoração balinesa, estrutura premium</p></div>
     </div>
   </div></section>);
 }
@@ -358,25 +358,25 @@ function Gallery(){
   const [lb,sLb]=useState(null);
   const items=W.gallery.filter(g=>f==="all"||f===String(g.year)||(f==="fotos"&&g.type==="photo")||(f==="video"&&g.type==="video"));
   return(<section className="sec sec-d" id="galeria"><div className="wrap">
-    <div className="sh"><div className="stag">MemÃ³rias</div><h2 className="st">Galeria <em>Warung Tour Lages</em></h2><p className="sd">Reviva os momentos que ficaram gravados pra sempre</p></div>
-    <div className="gf">{["all","fotos","video","2022","2019","2018"].map(v=>(<button key={v} className={`gfb ${f===v?"a":""}`} onClick={()=>sF(v)}>{v==="all"?"Todos":v==="fotos"?"Fotos":v==="video"?"VÃ­deo":v}</button>))}</div>
+    <div className="sh"><div className="stag">Memórias</div><h2 className="st">Galeria <em>Warung Tour Lages</em></h2><p className="sd">Reviva os momentos que ficaram gravados pra sempre</p></div>
+    <div className="gf">{["all","fotos","video","2022","2019","2018"].map(v=>(<button key={v} className={`gfb ${f===v?"a":""}`} onClick={()=>sF(v)}>{v==="all"?"Todos":v==="fotos"?"Fotos":v==="video"?"Vídeo":v}</button>))}</div>
     <div className="gg">{items.map(item=>(<div key={item.id} className="gi" onClick={()=>item.type==="video"&&sLb(item)}>
-      {IMG[item.id]?<img src={IMG[item.id]} alt={item.caption}/>:<div style={{width:"100%",height:"100%",background:"linear-gradient(135deg,hsl(15,60%,12%),hsl(35,50%,8%))",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontSize:36,opacity:.15}}>ðŸŽ¬</span></div>}
-      {item.type==="video"&&<><div className="pbtn"><svg width="18" height="20" viewBox="0 0 18 20" fill="white"><polygon points="0,0 18,10 0,20"/></svg></div><div className="vbadge">â–¶ VÃ­deo</div></>}
+      {IMG[item.id]?<img src={IMG[item.id]} alt={item.caption}/>:<div style={{width:"100%",height:"100%",background:"linear-gradient(135deg,hsl(15,60%,12%),hsl(35,50%,8%))",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontSize:36,opacity:.15}}>🎬</span></div>}
+      {item.type==="video"&&<><div className="pbtn"><svg width="18" height="20" viewBox="0 0 18 20" fill="white"><polygon points="0,0 18,10 0,20"/></svg></div><div className="vbadge">▶ Vídeo</div></>}
       <div className="go"><div className="gc">{item.caption}</div><div className="gy">{item.year}</div></div>
     </div>))}</div>
   </div>
-  {lb&&<div className="lbox" onClick={()=>sLb(null)}><button className="lbc">âœ•</button><div className="lbi" onClick={e=>e.stopPropagation()}><iframe src={`https://www.youtube.com/embed/${lb.videoId}?autoplay=1`} allow="autoplay;encrypted-media" allowFullScreen title={lb.caption}/></div></div>}
+  {lb&&<div className="lbox" onClick={()=>sLb(null)}><button className="lbc">✕</button><div className="lbi" onClick={e=>e.stopPropagation()}><iframe src={`https://www.youtube.com/embed/${lb.videoId}?autoplay=1`} allow="autoplay;encrypted-media" allowFullScreen title={lb.caption}/></div></div>}
   </section>);
 }
 
 function Editions(){
   return(<section className="sec" id="edicoes"><div className="wrap">
-    <div className="sh"><div className="stag">Linha do Tempo</div><h2 className="st">EdiÃ§Ãµes <em>Passadas</em></h2></div>
+    <div className="sh"><div className="stag">Linha do Tempo</div><h2 className="st">Edições <em>Passadas</em></h2></div>
     <div className="tlg">
-      {W.history.map((ed,i)=>(<div key={i} className="tlc"><div className="y">{ed.year}</div><div className="b">{ed.badge}</div><div className="v">ðŸ“ {ed.venue}</div><div className="ch">{ed.lineup.map((d,j)=><span key={j} className="cp">{d}</span>)}</div></div>))}
+      {W.history.map((ed,i)=>(<div key={i} className="tlc"><div className="y">{ed.year}</div><div className="b">{ed.badge}</div><div className="v">📍 {ed.venue}</div><div className="ch">{ed.lineup.map((d,j)=><span key={j} className="cp">{d}</span>)}</div></div>))}
       <div className="tlc" style={{borderColor:"rgba(232,83,28,.3)",background:"linear-gradient(135deg,rgba(232,83,28,.05),var(--bg3))"}}>
-        <div className="y">2026</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>O Maior Retorno</div><div className="v">ðŸ“ Pq. Conta Dinheiro</div>
+        <div className="y">2026</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>O Maior Retorno</div><div className="v">📍 Pq. Conta Dinheiro</div>
         <div className="ch">{W.e26.lineup.map((d,j)=><span key={j} className="cp" style={{color:"var(--sun2)"}}>{d.name}</span>)}</div>
       </div>
     </div>
@@ -385,9 +385,9 @@ function Editions(){
 
 function Tickets(){
   return(<section className="sec sec-d" id="ingressos"><div className="wrap">
-    <div className="sh"><div className="stag">Ingressos</div><h2 className="st">Garanta Seu <em>Lugar</em></h2><p className="sd">O Templo retorna depois de 4 anos â€” nÃ£o fique de fora</p></div>
-    <div className="tkg">{W.e26.tickets.map((t,i)=>(<div key={i} className="tkc"><div className="tkt">{t.type}</div><div className="tkp">{t.price}</div><div className={`tks ${t.status}`}>â— DisponÃ­vel</div></div>))}</div>
-    <div className="tkcta"><a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf">Comprar Ingressos â€” VRC Tickets</a><p className="tkw">Mesas e camarotes: <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">{W.e26.whatsappDisplay}</a></p></div>
+    <div className="sh"><div className="stag">Ingressos</div><h2 className="st">Garanta Seu <em>Lugar</em></h2><p className="sd">O Templo retorna depois de 4 anos — não fique de fora</p></div>
+    <div className="tkg">{W.e26.tickets.map((t,i)=>(<div key={i} className="tkc"><div className="tkt">{t.type}</div><div className="tkp">{t.price}</div><div className={`tks ${t.status}`}>● Disponível</div></div>))}</div>
+    <div className="tkcta"><a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf">Comprar Ingressos — VRC Tickets</a><p className="tkw">Mesas e camarotes: <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">{W.e26.whatsappDisplay}</a></p></div>
   </div></section>);
 }
 
@@ -395,10 +395,10 @@ function ContactForm(){
   const [cf,sCf]=useState({n:"",e:"",w:"",s:"",m:""});
   const [cs,sCs]=useState(false);
   return(<section className="sec" id="contato"><div className="wrap">
-    <div className="sh"><div className="stag">Fale Conosco</div><h2 className="st">Entre em <em>Contato</em></h2><p className="sd">DÃºvidas, parcerias, imprensa ou sugestÃµes â€” fale com a gente</p></div>
+    <div className="sh"><div className="stag">Fale Conosco</div><h2 className="st">Entre em <em>Contato</em></h2><p className="sd">Dúvidas, parcerias, imprensa ou sugestões — fale com a gente</p></div>
     <div className="contact-wrap">
       <div className="fb">
-        {cs?<div className="fok">âœ“ Mensagem enviada com sucesso!</div>:
+        {cs?<div className="fok">✓ Mensagem enviada com sucesso!</div>:
         <form onSubmit={e=>{e.preventDefault();sCs(true);sCf({n:"",e:"",w:"",s:"",m:""});if(typeof fbq!=="undefined")fbq("track","Lead");setTimeout(()=>sCs(false),5e3)}}>
           <div className="fg"><label>Nome</label><input required value={cf.n} onChange={e=>sCf({...cf,n:e.target.value})} placeholder="Seu nome"/></div>
           <div className="fg"><label>E-mail</label><input type="email" required value={cf.e} onChange={e=>sCf({...cf,e:e.target.value})} placeholder="seu@email.com"/></div>
@@ -414,7 +414,7 @@ function ContactForm(){
 
 function Footer(){
   return(<footer className="foot">
-    <div style={{fontSize:22,marginBottom:10}}>ðŸ‰</div>
+    <div style={{fontSize:22,marginBottom:10}}>🐉</div>
     <div className="fl">WARUNG <span className="w">TOUR</span> LAGES</div>
     <p style={{fontSize:10,color:"var(--txt3)",marginBottom:16,letterSpacing:3}}>O TEMPLO NA SERRA CATARINENSE</p>
     <div className="flinks">
@@ -423,7 +423,7 @@ function Footer(){
       <a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer">VRC Tickets</a>
       <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp VIP</a>
     </div>
-    <p style={{fontSize:10,color:"var(--txt4)"}}>Â© 2026 Warung Tour Lages. Todos os direitos reservados.</p>
+    <p style={{fontSize:10,color:"var(--txt4)"}}>© 2026 Warung Tour Lages. Todos os direitos reservados.</p>
   </footer>);
 }
 
