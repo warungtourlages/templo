@@ -27,10 +27,10 @@ const IMG = {
 
 const W = {
   history: [
-    { year: 2016, lineup: ["Line-up inaugural"], venue: "Lages Shopping Center", badge: "A Primeira Vez" },
-    { year: 2017, lineup: ["Grandes nomes nacionais"], venue: "Lages Shopping Center", badge: "Consolidação" },
+    { year: 2016, lineup: ["Line-up inaugural"], venue: "soNNora Club", badge: "A Primeira Vez" },
+    { year: 2017, lineup: ["Grandes nomes nacionais"], venue: "Lages Shopping Center", badge: "ConsolidaÃ§Ã£o" },
     { year: 2018, lineup: ["DJs nacionais e internacionais"], venue: "Lages Shopping Center", badge: "Crescimento" },
-    { year: 2019, lineup: ["Line-up histórico"], venue: "Lages Shopping Center", badge: "Pré-Pandemia" },
+    { year: 2019, lineup: ["Line-up histÃ³rico"], venue: "Lages Shopping Center", badge: "PrÃ©-Pandemia" },
     { year: 2022, lineup: ["Kolombo","D-Nox","Zac","Fran Bortolossi","Bianco Vargas"], venue: "Lages Shopping Center", badge: "O Reencontro" },
   ],
   e26: {
@@ -38,38 +38,36 @@ const W = {
     whatsapp: "https://wa.me/5547997360782", whatsappDisplay: "(47) 99736-0782",
     instagram: "https://www.instagram.com/warungtourlages/",
     lineup: [
-      { name: "Rafael", handle: "@rafael___music", origin: "Internacional", tag: "HEADLINER", img: "luRafael",
-        desc: "A força ascendente da House e Indie Dance mundial. Após um 2025 lendário com Coachella e remixes para RÜFÜS DU SOL, traz seu som emotivo direto de Ibiza para a Serra." },
-      { name: "Kolombo", origin: "Bélgica", tag: "LENDA DO TEMPLO", img: "luKolombo",
-        desc: "Dispensa apresentações. Garantia daquela vibe única, dos graves que fazem o chão tremer e da conexão pura com a pista. A essência do Templo." },
-      { name: "Fran Bortolossi", handle: "@franbortolossi", origin: "Brasil — Sul", tag: "NACIONAL", img: "luFran",
+      { name: "Rafael", handle: "@rafael___music", insta: "https://www.instagram.com/rafael___music/", origin: "Internacional", tag: "\ud83c\uddee\ud83c\uddf1 DIRETAMENTE DE ISRAEL", img: "luRafael", featured: true,
+        desc: "A for\u00e7a ascendente da House e Indie Dance mundial. Ap\u00f3s um 2025 lend\u00e1rio com Coachella e remixes para R\u00dcF\u00dcS DU SOL, traz seu som emotivo direto de Ibiza para a Serra." },
+      { name: "Kolombo", handle: "@kolombo_music", insta: "https://www.instagram.com/kolombo_music/", origin: "B\u00e9lgica", tag: "\ud83c\udde7\ud83c\uddea DIRETAMENTE DA B\u00c9LGICA", img: "luKolombo", featured: true,
+        desc: "Dispensa apresenta\u00e7\u00f5es. Garantia daquela vibe \u00fanica, dos graves que fazem o ch\u00e3o tremer e da conex\u00e3o pura com a pista. A ess\u00eancia do Templo." },
+      { name: "Fran Bortolossi", handle: "@franbortolossi", insta: "https://www.instagram.com/franbortolossi/", origin: "Brasil \u2014 Sul", tag: "NACIONAL", img: "luFran", featured: true,
         desc: "Figura central da cena do Sul. Criador da COLOURS, residente do Havana. Tomorrowland, D-Edge e Warung." },
-      { name: "Jader", origin: "Brasil", tag: "NACIONAL", img: "luJader",
-        desc: "Energia e groove em cada set. Conquistando espaço na cena brasileira." },
-      { name: "Redinx", origin: "Brasil", tag: "REGIONAL", img: "luRedinx",
-        desc: "Representando a cena local com sets que conectam a pista do início ao fim." },
-      { name: "Vica", origin: "Brasil", tag: "REGIONAL", img: "luVica",
-        desc: "Talento emergente com frescor e identidade única." },
+      { name: "Jader", origin: "Brasil", tag: "NACIONAL", img: "luJader", featured: false,
+        desc: "Energia e groove em cada set. Conquistando espa\u00e7o na cena brasileira." },
+      { name: "Redinx", origin: "Brasil", tag: "REGIONAL", img: "luRedinx", featured: false,
+        desc: "Representando a cena local com sets que conectam a pista do in\u00edcio ao fim." },
+      { name: "Vica", origin: "Brasil", tag: "REGIONAL", img: "luVica", featured: false,
+        desc: "Talento emergente com frescor e identidade \u00fanica." },
     ],
     tickets: [
-      { type: "Pista — 1º Lote", price: "R$ 140", status: "av" },
-      { type: "Pista — 2º Lote", price: "R$ 180", status: "soon" },
-      { type: "Premium", price: "R$ 260", status: "av" },
-      { type: "Mesas & Camarotes", price: "Sob consulta", status: "wa" },
+      { type: "Pista \u2014 3\u00ba Lote", price: "R$ 109", status: "av" },
+      { type: "Backstage \u2014 3\u00ba Lote", price: "R$ 199", status: "av" },
     ],
   },
   gallery: [
-    { id:"galPistaAerea", caption:"Pista lotada — Warung Tour Lages 2022", year:2022, type:"photo" },
-    { id:"galDjClose", caption:"DJ comandando a pista — 2022", year:2022, type:"photo" },
-    { id:"galDecoracao", caption:"Decoração balinesa — Buddha e o Templo", year:2022, type:"photo" },
-    { id:"galLaser", caption:"Lasers e o Dragão — atmosfera Warung", year:2022, type:"photo" },
-    { id:"galPublicoGrupo", caption:"Amigos curtindo — energia pura", year:2022, type:"photo" },
-    { id:"galBastidores", caption:"Bastidores — palco montado com o Dragão", year:2022, type:"photo" },
-    { id:"galVip", caption:"Público com kits Warung — VIP", year:2022, type:"photo" },
-    { id:"galSunset", caption:"Lages ao entardecer — a cidade do Templo", year:2019, type:"photo" },
-    { id:"galPublico2018", caption:"Público vibrando — edição histórica", year:2018, type:"photo" },
-    { id:"galSerra", caption:"Serra Catarinense ao pôr do sol", year:2022, type:"photo" },
-    { id:"aftermovie", caption:"Aftermovie Oficial — Warung Tour Lages 2022", year:2022, type:"video", videoId:"3XZPy9rW4kc" },
+    { id:"galPistaAerea", caption:"Pista lotada \u2014 Warung Tour Lages 2022", year:2022, type:"photo" },
+    { id:"galDjClose", caption:"DJ comandando a pista \u2014 2022", year:2022, type:"photo" },
+    { id:"galDecoracao", caption:"Decora\u00e7\u00e3o balinesa \u2014 Buddha e o Templo", year:2022, type:"photo" },
+    { id:"galLaser", caption:"Lasers e o Drag\u00e3o \u2014 atmosfera Warung", year:2022, type:"photo" },
+    { id:"galPublicoGrupo", caption:"Amigos curtindo \u2014 energia pura", year:2022, type:"photo" },
+    { id:"galBastidores", caption:"Bastidores \u2014 palco montado com o Drag\u00e3o", year:2022, type:"photo" },
+    { id:"galVip", caption:"P\u00fablico com kits Warung \u2014 VIP", year:2022, type:"photo" },
+    { id:"galSunset", caption:"Lages ao entardecer \u2014 a cidade do Templo", year:2019, type:"photo" },
+    { id:"galPublico2018", caption:"P\u00fablico vibrando \u2014 edi\u00e7\u00e3o hist\u00f3rica", year:2018, type:"photo" },
+    { id:"galSerra", caption:"Serra Catarinense ao p\u00f4r do sol", year:2022, type:"photo" },
+    { id:"aftermovie", caption:"Aftermovie Oficial \u2014 Warung Tour Lages 2022", year:2022, type:"video", videoId:"3XZPy9rW4kc" },
   ],
 };
 
@@ -94,7 +92,7 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .logo{font-family:var(--ff);font-size:11px;font-weight:700;letter-spacing:5px;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:8px}
 .logo .w{color:var(--sun1)}
 .navl{display:flex;gap:24px;align-items:center}
-.navl a{font-size:11.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2);text-decoration:none;transition:.3s}
+.navl a{font-size:11.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#fff;text-decoration:none;transition:.3s}
 .navl a:hover{color:var(--sun2)}
 .ctab{padding:9px 22px;background:var(--sun1);color:#fff;border:none;border-radius:var(--r3);font-family:var(--ff);font-size:9px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;transition:.35s;text-decoration:none;display:inline-block}
 .ctab:hover{background:var(--sun2);transform:scale(1.04)}
@@ -117,7 +115,7 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .hbtns{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;animation:up .8s ease .6s both}
 .bf{padding:16px 48px;background:linear-gradient(135deg,var(--sun1),var(--sun2));color:#fff;border:none;border-radius:var(--r3);font-family:var(--ff);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.4s;text-decoration:none;box-shadow:0 4px 40px var(--glow)}
 .bf:hover{transform:translateY(-3px);box-shadow:0 8px 50px rgba(232,83,28,.35)}
-.bgh{padding:16px 48px;background:rgba(255,255,255,.05);color:var(--txt);border:1px solid rgba(255,255,255,.15);border-radius:var(--r3);font-family:var(--ff);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.4s;text-decoration:none;backdrop-filter:blur(4px)}
+.bgh{padding:16px 48px;background:rgba(255,255,255,.05);color:#fff;border:1px solid rgba(255,255,255,.15);border-radius:var(--r3);font-family:var(--ff);font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.4s;text-decoration:none;backdrop-filter:blur(4px)}
 .bgh:hover{border-color:var(--sun1);color:var(--sun2)}
 
 .cds{position:relative;z-index:2;background:var(--bg2);border-top:1px solid rgba(255,255,255,.03);border-bottom:1px solid rgba(255,255,255,.03);padding:24px 20px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap;align-items:center}
@@ -146,7 +144,6 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .simg:hover img{transform:scale(1.05)}
 .simg .il{position:absolute;bottom:0;left:0;right:0;padding:8px 12px;background:linear-gradient(transparent,rgba(0,0,0,.85));font-size:9px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--txt2)}
 
-/* LINEUP — FIXED EQUAL SIZING */
 .lug{display:grid;gap:14px}
 .luhc{grid-column:1/-1;display:grid;grid-template-columns:200px 1fr;background:var(--bg3);border:1px solid rgba(232,83,28,.2);border-radius:var(--r2);overflow:hidden;transition:.4s}
 .luhc:hover{border-color:rgba(232,83,28,.5);transform:translateY(-2px)}
@@ -156,13 +153,13 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .luinfo .bname{font-family:var(--ff);font-size:clamp(28px,4vw,44px);font-weight:900;line-height:1;background:linear-gradient(135deg,var(--sun2),var(--sun4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px}
 .luinfo .borig{font-size:12px;color:var(--txt2);letter-spacing:1px;margin-bottom:12px}
 .luinfo .bdesc{font-size:13px;color:var(--txt2);line-height:1.7}
-.luinfo .bhand{font-size:12px;color:var(--sun2);margin-top:10px;font-weight:500}
-.luleg{border-color:rgba(201,160,74,.2)!important}
-.luleg:hover{border-color:rgba(201,160,74,.5)!important}
-.luleg .btag{color:var(--gold)!important}
-.luleg .bname{background:linear-gradient(135deg,var(--gold2),var(--sun4))!important;-webkit-background-clip:text!important;-webkit-text-fill-color:transparent!important}
+.luinfo .bhand{font-size:12px;color:var(--sun2);margin-top:10px;font-weight:500;text-decoration:none;display:inline-block;transition:.3s}
+.luinfo .bhand:hover{color:var(--sun3)}
+.lunac{border-color:rgba(100,200,100,.15)!important}
+.lunac:hover{border-color:rgba(100,200,100,.4)!important}
+.lunac .btag{color:#4ade80!important}
 
-.lusup{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;grid-column:1/-1}
+.lusup{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;grid-column:1/-1}
 .luc{background:var(--bg3);border:1px solid rgba(255,255,255,.04);border-radius:var(--r);overflow:hidden;transition:.4s;display:flex;flex-direction:column}
 .luc:hover{border-color:rgba(232,83,28,.25);transform:translateY(-3px)}
 .luc .lucpw{width:100%;aspect-ratio:4/5;overflow:hidden;position:relative;flex-shrink:0}
@@ -205,18 +202,19 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .tlc .ch{display:flex;flex-wrap:wrap;gap:4px}
 .tlc .cp{padding:2px 8px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.04);border-radius:var(--r3);font-size:9px;color:var(--txt3)}
 
-.tkg{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-bottom:44px}
+.tkg{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:44px;max-width:600px;margin-left:auto;margin-right:auto}
 .tkc{background:var(--bg3);border:1px solid rgba(255,255,255,.04);border-radius:var(--r2);padding:32px 24px;text-align:center;transition:.4s}
 .tkc:hover{border-color:rgba(232,83,28,.25);transform:translateY(-3px)}
 .tkt{font-family:var(--ff);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--txt3);margin-bottom:14px}
 .tkp{font-family:var(--ff);font-size:32px;font-weight:800;color:var(--txt);margin-bottom:12px}
 .tks{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
-.tks.av{color:#4ade80}.tks.soon{color:var(--gold)}.tks.wa{color:var(--sun2)}
+.tks.av{color:#4ade80}
 .tkcta{text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
 .tkw{font-size:12px;color:var(--txt2);margin-top:6px}
 .tkw a{color:var(--sun2);text-decoration:none;font-weight:600}
 
-.fr{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+/* CONTACT ONLY - CENTERED */
+.contact-wrap{max-width:600px;margin:0 auto}
 .fb{background:var(--bg3);border:1px solid rgba(255,255,255,.04);border-radius:var(--r2);padding:40px}
 .fb h3{font-family:var(--ff);font-size:18px;font-weight:700;margin-bottom:6px}
 .fb>p{font-size:12px;color:var(--txt2);margin-bottom:24px;line-height:1.5}
@@ -225,7 +223,6 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 .fg input,.fg textarea,.fg select{width:100%;padding:12px 14px;background:var(--bg);border:1px solid rgba(255,255,255,.06);border-radius:8px;color:var(--txt);font-family:var(--fb);font-size:13px;transition:.3s;outline:none}
 .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--sun1);box-shadow:0 0 0 3px var(--glow)}
 .fg textarea{resize:vertical;min-height:100px}
-.fg select option{background:var(--bg3);color:var(--txt)}
 .fbt{width:100%;padding:14px;background:linear-gradient(135deg,var(--sun1),var(--sun2));color:#fff;border:none;border-radius:8px;font-family:var(--ff);font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.3s}
 .fbt:hover{opacity:.9}
 .fok{padding:14px;background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.25);border-radius:8px;text-align:center;color:#4ade80;font-weight:600;font-size:13px}
@@ -255,19 +252,29 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);overflow-x:hidd
 
 @media(max-width:900px){
   .navl{display:none}.mobb{display:block}
-  .sgrid,.luhc,.fr{grid-template-columns:1fr}
-  .luhc{grid-template-columns:1fr}
+  .sgrid,.luhc,.lunac{grid-template-columns:1fr}
   .luhc .luph{width:100%;height:280px}
-  .lusup{grid-template-columns:repeat(2,1fr)}
+  .lusup{grid-template-columns:1fr}
   .vb{grid-template-columns:1fr}.hmeta{gap:14px}
   .sec{padding:72px 18px}.fb{padding:24px}
   .cds{gap:20px}
 }
 @media(max-width:600px){
   .gg,.tkg,.tlg{grid-template-columns:1fr}
-  .lusup{grid-template-columns:1fr}
   .simgs{grid-template-columns:1fr}
 }
+`;
+
+// Facebook Pixel
+const FB_PIXEL = `
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 `;
 
 function Cd(){
@@ -278,21 +285,21 @@ function Cd(){
 
 function Nav({s}){
   const [m,sM]=useState(false);
-  const lk=[["#historia","História"],["#lineup","Lineup"],["#galeria","Galeria"],["#edicoes","Edições"],["#ingressos","Ingressos"],["#contato","Contato"]];
-  return(<><nav className={`topnav ${s?"s":""}`}><div className="logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><span style={{fontSize:16}}>🐉</span> WARUNG <span className="w">TOUR</span> LAGES</div><div className="navl">{lk.map(([h,t])=><a key={h} href={h}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="ctab">Ingressos</a></div><button className="mobb" onClick={()=>sM(true)}>☰</button></nav>
-  {m&&<div className="mobm"><button className="cx" onClick={()=>sM(false)}>✕</button>{lk.map(([h,t])=><a key={h} href={h} onClick={()=>sM(false)}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf" style={{marginTop:10}}>Comprar Ingressos</a></div>}</>);
+  const lk=[["#historia","HistÃ³ria"],["#lineup","Lineup"],["#galeria","Galeria"],["#edicoes","EdiÃ§Ãµes"],["#ingressos","Ingressos"],["#contato","Contato"]];
+  return(<><nav className={`topnav ${s?"s":""}`}><div className="logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><span style={{fontSize:16}}>ðŸ‰</span> WARUNG <span className="w">TOUR</span> LAGES</div><div className="navl">{lk.map(([h,t])=><a key={h} href={h}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="ctab">Ingressos</a></div><button className="mobb" onClick={()=>sM(true)}>â˜°</button></nav>
+  {m&&<div className="mobm"><button className="cx" onClick={()=>sM(false)}>âœ•</button>{lk.map(([h,t])=><a key={h} href={h} onClick={()=>sM(false)}>{t}</a>)}<a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf" style={{marginTop:10}}>Comprar Ingressos</a></div>}</>);
 }
 
 function Hero(){
   return(<section className="hero" id="home"><div className="hero-img" style={{backgroundImage:`url(${IMG.heroBg})`}}/><div className="hc">
-    <div className="hpill"><span className="dot"/> 4 Anos de Espera — O Templo Retorna</div>
+    <div className="hpill"><span className="dot"/> 4 Anos de Espera â€” O Templo Retorna</div>
     <h1 className="hh1"><span className="l1">WARUNG</span><span className="l2">TOUR LAGES</span></h1>
     <p className="hsub">O Templo na Serra Catarinense</p>
     <div className="hmeta">
       <div className="mi"><div className="lab">Data</div><div className="val">{W.e26.dateShort}</div></div>
-      <div className="mi"><div className="lab">Início</div><div className="val">15h — Sunset</div></div>
+      <div className="mi"><div className="lab">InÃ­cio</div><div className="val">15h â€” 01h</div></div>
       <div className="mi"><div className="lab">Local</div><div className="val">Pq. Conta Dinheiro</div></div>
-      <div className="mi"><div className="lab">Formato</div><div className="val">Open Air Sunset</div></div>
+      <div className="mi"><div className="lab">Formato</div><div className="val">Sunset</div></div>
     </div>
     <div className="hbtns"><a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf">Garantir Ingresso</a><a href="#lineup" className="bgh">Ver Lineup</a></div>
   </div><div style={{position:"absolute",bottom:28,left:"50%",transform:"translateX(-50%)",zIndex:2,animation:"bob 2.5s ease-in-out infinite"}}><span style={{display:"block",width:1,height:36,background:"linear-gradient(var(--txt3),transparent)",margin:"0 auto 5px"}}/><small style={{fontSize:8,letterSpacing:3,textTransform:"uppercase",color:"var(--txt3)"}}>Scroll</small></div></section>);
@@ -301,17 +308,17 @@ function Hero(){
 function Story(){
   return(<section className="sec sec-d" id="historia"><div className="wrap"><div className="sgrid">
     <div className="stxt">
-      <div className="stag">A História</div>
-      <h3>Depois de <em>4 anos</em>, o Templo retorna à Serra</h3>
-      <p>Para o povo balinês, Warung significa "casa". O Warung Beach Club, de Itajaí (SC), é referência mundial na música eletrônica.</p>
-      <p>Desde 2016, o Warung Tour Lages leva a essência do Templo para a Serra. Em 2022, após a pandemia, horas inesquecíveis de música e conexão marcaram o reencontro.</p>
-      <div className="shl"><p>"Foram 4 anos de espera, e agora o Templo retorna com toda a sua magia, vibe e identidade que marcaram história."</p></div>
-      <p>Em 2026, <strong>nova casa</strong>: o <strong>Parque de Exposições Conta Dinheiro</strong>. Formato <strong>Sunset</strong> inédito às 15h, decoração balinesa e 2 atrações internacionais.</p>
+      <div className="stag">A HistÃ³ria</div>
+      <h3>Depois de <em>4 anos</em>, o Templo retorna Ã  Serra</h3>
+      <p>Para o povo balinÃªs, Warung significa "casa". O Warung Beach Club, de ItajaÃ­ (SC), Ã© referÃªncia mundial na mÃºsica eletrÃ´nica.</p>
+      <p>Desde 2016, o Warung Tour Lages leva a essÃªncia do Templo para a Serra. Em 2022, apÃ³s a pandemia, horas inesquecÃ­veis de mÃºsica e conexÃ£o marcaram o reencontro.</p>
+      <div className="shl"><p>"Foram 4 anos de espera, e agora o Templo retorna com toda a sua magia, vibe e identidade que marcaram histÃ³ria."</p></div>
+      <p>Em 2026, <strong>nova casa</strong>: o <strong>Parque de ExposiÃ§Ãµes Conta Dinheiro</strong>. Formato Sunset Ã s 15h, decoraÃ§Ã£o balinesa e 2 atraÃ§Ãµes internacionais.</p>
     </div>
     <div className="simgs">
-      <div className="simg"><img src={IMG.historiaPublico2022} alt="Público 2022"/><div className="il">Público 2022</div></div>
+      <div className="simg"><img src={IMG.historiaPublico2022} alt="PÃºblico 2022"/><div className="il">PÃºblico 2022</div></div>
       <div className="simg"><img src={IMG.historiaDjPalco} alt="DJ no palco"/><div className="il">DJ no Palco 2022</div></div>
-      <div className="simg"><img src={IMG.historiaDecoracao} alt="Decoração"/><div className="il">Decoração Warung</div></div>
+      <div className="simg"><img src={IMG.historiaDecoracao} alt="DecoraÃ§Ã£o"/><div className="il">DecoraÃ§Ã£o Warung</div></div>
       <div className="simg"><img src={IMG.historiaLocalNovo} alt="Conta Dinheiro"/><div className="il">Nova Casa 2026</div></div>
     </div>
   </div></div></section>);
@@ -319,17 +326,29 @@ function Story(){
 
 function Lineup(){
   const lu=W.e26.lineup;
+  const featured=lu.filter(d=>d.featured);
+  const support=lu.filter(d=>!d.featured);
   return(<section className="sec" id="lineup"><div className="wrap">
-    <div className="sh"><div className="stag">Edição 2026</div><h2 className="st">Line<em>-</em>Up</h2><p className="sd">Uma curadoria impecável unindo o som que construiu nossa história com a energia que define o amanhã</p></div>
+    <div className="sh"><div className="stag">EdiÃ§Ã£o 2026</div><h2 className="st">Line<em>-</em>Up</h2><p className="sd">Uma curadoria impecÃ¡vel unindo o som que construiu nossa histÃ³ria com a energia que define o amanhÃ£</p></div>
     <div className="lug">
-      <div className="luhc"><img className="luph" src={IMG[lu[0].img]} alt={lu[0].name}/><div className="luinfo"><div className="btag">💥 {lu[0].tag}</div><div className="bname">{lu[0].name}</div><div className="borig">{lu[0].origin}</div><div className="bdesc">{lu[0].desc}</div>{lu[0].handle&&<div className="bhand">{lu[0].handle}</div>}</div></div>
-      <div className="luhc luleg"><img className="luph" src={IMG[lu[1].img]} alt={lu[1].name}/><div className="luinfo"><div className="btag">💥 {lu[1].tag}</div><div className="bname">{lu[1].name}</div><div className="borig">{lu[1].origin}</div><div className="bdesc">{lu[1].desc}</div></div></div>
-      <div className="lusup">{lu.slice(2).map((dj,i)=>(<div key={i} className="luc"><div className="lucpw"><img src={IMG[dj.img]} alt={dj.name}/></div><div className="lucb"><div className="tag">{dj.tag}</div><div className="nm">{dj.name}</div><div className="or">{dj.origin}</div><div className="ds">{dj.desc}</div>{dj.handle&&<div style={{fontSize:11,color:"var(--sun2)",marginTop:6}}>{dj.handle}</div>}</div></div>))}</div>
+      {featured.map((dj,i)=>(
+        <div key={i} className={`luhc ${dj.tag.includes("NACIONAL")?"lunac":""}`}>
+          <img className="luph" src={IMG[dj.img]} alt={dj.name}/>
+          <div className="luinfo">
+            <div className="btag">{dj.tag}</div>
+            <div className="bname">{dj.name}</div>
+            <div className="borig">{dj.origin}</div>
+            <div className="bdesc">{dj.desc}</div>
+            {dj.insta&&<a href={dj.insta} target="_blank" rel="noopener noreferrer" className="bhand">{dj.handle}</a>}
+          </div>
+        </div>
+      ))}
+      <div className="lusup">{support.map((dj,i)=>(<div key={i} className="luc"><div className="lucpw"><img src={IMG[dj.img]} alt={dj.name}/></div><div className="lucb"><div className="tag">{dj.tag}</div><div className="nm">{dj.name}</div><div className="or">{dj.origin}</div><div className="ds">{dj.desc}</div></div></div>))}</div>
     </div>
     <div className="vb">
-      <div className="vbi"><div className="ic">📍</div><h4>Nova Casa</h4><p>Parque de Exposições Conta Dinheiro — Lages, SC</p></div>
-      <div className="vbi"><div className="ic">🌅</div><h4>Formato Sunset</h4><p>Início às 15h — Entardecer na Serra em Abril</p></div>
-      <div className="vbi"><div className="ic">🐉</div><h4>Experiência Warung</h4><p>Decoração balinesa, estrutura premium</p></div>
+      <div className="vbi"><div className="ic">ðŸ“</div><h4>Nova Casa</h4><p>Parque de ExposiÃ§Ãµes Conta Dinheiro â€” Lages, SC</p></div>
+      <div className="vbi"><div className="ic">ðŸŒ…</div><h4>Formato Sunset</h4><p>InÃ­cio Ã s 15h â€” Entardecer na Serra em Abril</p></div>
+      <div className="vbi"><div className="ic">ðŸ‰</div><h4>ExperiÃªncia Warung</h4><p>DecoraÃ§Ã£o balinesa, estrutura premium</p></div>
     </div>
   </div></section>);
 }
@@ -339,25 +358,25 @@ function Gallery(){
   const [lb,sLb]=useState(null);
   const items=W.gallery.filter(g=>f==="all"||f===String(g.year)||(f==="fotos"&&g.type==="photo")||(f==="video"&&g.type==="video"));
   return(<section className="sec sec-d" id="galeria"><div className="wrap">
-    <div className="sh"><div className="stag">Memórias</div><h2 className="st">Galeria <em>Warung Tour Lages</em></h2><p className="sd">Reviva os momentos que ficaram gravados pra sempre</p></div>
-    <div className="gf">{["all","fotos","video","2022","2019","2018"].map(v=>(<button key={v} className={`gfb ${f===v?"a":""}`} onClick={()=>sF(v)}>{v==="all"?"Todos":v==="fotos"?"Fotos":v==="video"?"Vídeo":v}</button>))}</div>
+    <div className="sh"><div className="stag">MemÃ³rias</div><h2 className="st">Galeria <em>Warung Tour Lages</em></h2><p className="sd">Reviva os momentos que ficaram gravados pra sempre</p></div>
+    <div className="gf">{["all","fotos","video","2022","2019","2018"].map(v=>(<button key={v} className={`gfb ${f===v?"a":""}`} onClick={()=>sF(v)}>{v==="all"?"Todos":v==="fotos"?"Fotos":v==="video"?"VÃ­deo":v}</button>))}</div>
     <div className="gg">{items.map(item=>(<div key={item.id} className="gi" onClick={()=>item.type==="video"&&sLb(item)}>
-      {IMG[item.id]?<img src={IMG[item.id]} alt={item.caption}/>:<div style={{width:"100%",height:"100%",background:"linear-gradient(135deg,hsl(15,60%,12%),hsl(35,50%,8%))",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontSize:36,opacity:.15}}>🎬</span></div>}
-      {item.type==="video"&&<><div className="pbtn"><svg width="18" height="20" viewBox="0 0 18 20" fill="white"><polygon points="0,0 18,10 0,20"/></svg></div><div className="vbadge">▶ Vídeo</div></>}
+      {IMG[item.id]?<img src={IMG[item.id]} alt={item.caption}/>:<div style={{width:"100%",height:"100%",background:"linear-gradient(135deg,hsl(15,60%,12%),hsl(35,50%,8%))",display:"flex",alignItems:"center",justifyContent:"center"}}><span style={{fontSize:36,opacity:.15}}>ðŸŽ¬</span></div>}
+      {item.type==="video"&&<><div className="pbtn"><svg width="18" height="20" viewBox="0 0 18 20" fill="white"><polygon points="0,0 18,10 0,20"/></svg></div><div className="vbadge">â–¶ VÃ­deo</div></>}
       <div className="go"><div className="gc">{item.caption}</div><div className="gy">{item.year}</div></div>
     </div>))}</div>
   </div>
-  {lb&&<div className="lbox" onClick={()=>sLb(null)}><button className="lbc">✕</button><div className="lbi" onClick={e=>e.stopPropagation()}><iframe src={`https://www.youtube.com/embed/${lb.videoId}?autoplay=1`} allow="autoplay;encrypted-media" allowFullScreen title={lb.caption}/><p style={{textAlign:"center",marginTop:14,color:"var(--txt2)",fontSize:13}}>{lb.caption}</p></div></div>}
+  {lb&&<div className="lbox" onClick={()=>sLb(null)}><button className="lbc">âœ•</button><div className="lbi" onClick={e=>e.stopPropagation()}><iframe src={`https://www.youtube.com/embed/${lb.videoId}?autoplay=1`} allow="autoplay;encrypted-media" allowFullScreen title={lb.caption}/></div></div>}
   </section>);
 }
 
 function Editions(){
   return(<section className="sec" id="edicoes"><div className="wrap">
-    <div className="sh"><div className="stag">Linha do Tempo</div><h2 className="st">Edições <em>Passadas</em></h2></div>
+    <div className="sh"><div className="stag">Linha do Tempo</div><h2 className="st">EdiÃ§Ãµes <em>Passadas</em></h2></div>
     <div className="tlg">
-      {W.history.map((ed,i)=>(<div key={i} className="tlc"><div className="y">{ed.year}</div><div className="b">{ed.badge}</div><div className="v">📍 {ed.venue}</div><div className="ch">{ed.lineup.map((d,j)=><span key={j} className="cp">{d}</span>)}</div></div>))}
+      {W.history.map((ed,i)=>(<div key={i} className="tlc"><div className="y">{ed.year}</div><div className="b">{ed.badge}</div><div className="v">ðŸ“ {ed.venue}</div><div className="ch">{ed.lineup.map((d,j)=><span key={j} className="cp">{d}</span>)}</div></div>))}
       <div className="tlc" style={{borderColor:"rgba(232,83,28,.3)",background:"linear-gradient(135deg,rgba(232,83,28,.05),var(--bg3))"}}>
-        <div className="y">2026</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>O Maior Retorno</div><div className="v">📍 Pq. Conta Dinheiro</div>
+        <div className="y">2026</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>O Maior Retorno</div><div className="v">ðŸ“ Pq. Conta Dinheiro</div>
         <div className="ch">{W.e26.lineup.map((d,j)=><span key={j} className="cp" style={{color:"var(--sun2)"}}>{d.name}</span>)}</div>
       </div>
     </div>
@@ -366,36 +385,28 @@ function Editions(){
 
 function Tickets(){
   return(<section className="sec sec-d" id="ingressos"><div className="wrap">
-    <div className="sh"><div className="stag">Ingressos</div><h2 className="st">Garanta Seu <em>Lugar</em></h2><p className="sd">O Templo retorna depois de 4 anos — não fique de fora</p></div>
-    <div className="tkg">{W.e26.tickets.map((t,i)=>(<div key={i} className="tkc"><div className="tkt">{t.type}</div><div className="tkp">{t.price}</div><div className={`tks ${t.status}`}>{t.status==="av"?"● Disponível":t.status==="soon"?"◌ Em breve":"📲 Via WhatsApp"}</div></div>))}</div>
-    <div className="tkcta"><a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf">Comprar Ingressos — VRC Tickets</a><p className="tkw">Mesas e camarotes: <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">{W.e26.whatsappDisplay}</a></p></div>
+    <div className="sh"><div className="stag">Ingressos</div><h2 className="st">Garanta Seu <em>Lugar</em></h2><p className="sd">O Templo retorna depois de 4 anos â€” nÃ£o fique de fora</p></div>
+    <div className="tkg">{W.e26.tickets.map((t,i)=>(<div key={i} className="tkc"><div className="tkt">{t.type}</div><div className="tkp">{t.price}</div><div className={`tks ${t.status}`}>â— DisponÃ­vel</div></div>))}</div>
+    <div className="tkcta"><a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer" className="bf">Comprar Ingressos â€” VRC Tickets</a><p className="tkw">Mesas e camarotes: <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">{W.e26.whatsappDisplay}</a></p></div>
   </div></section>);
 }
 
-function Forms(){
-  const [cf,sCf]=useState({n:"",e:"",s:"",m:""});const [rf,sRf]=useState({n:"",e:"",p:"",c:"",i:"pista"});
-  const [cs,sCs]=useState(false);const [rs,sRs]=useState(false);
+function ContactForm(){
+  const [cf,sCf]=useState({n:"",e:"",w:"",s:"",m:""});
+  const [cs,sCs]=useState(false);
   return(<section className="sec" id="contato"><div className="wrap">
-    <div className="sh"><div className="stag">Fale Conosco</div><h2 className="st">Contato & <em>Cadastro VIP</em></h2></div>
-    <div className="fr">
-      <div className="fb"><h3>📩 Contato</h3><p>Dúvidas, parcerias, imprensa ou sugestões.</p>
-        {cs?<div className="fok">✓ Mensagem enviada!</div>:
-        <form onSubmit={e=>{e.preventDefault();sCs(true);sCf({n:"",e:"",s:"",m:""});setTimeout(()=>sCs(false),5e3)}}>
+    <div className="sh"><div className="stag">Fale Conosco</div><h2 className="st">Entre em <em>Contato</em></h2><p className="sd">DÃºvidas, parcerias, imprensa ou sugestÃµes â€” fale com a gente</p></div>
+    <div className="contact-wrap">
+      <div className="fb">
+        {cs?<div className="fok">âœ“ Mensagem enviada com sucesso!</div>:
+        <form onSubmit={e=>{e.preventDefault();sCs(true);sCf({n:"",e:"",w:"",s:"",m:""});if(typeof fbq!=="undefined")fbq("track","Lead");setTimeout(()=>sCs(false),5e3)}}>
           <div className="fg"><label>Nome</label><input required value={cf.n} onChange={e=>sCf({...cf,n:e.target.value})} placeholder="Seu nome"/></div>
           <div className="fg"><label>E-mail</label><input type="email" required value={cf.e} onChange={e=>sCf({...cf,e:e.target.value})} placeholder="seu@email.com"/></div>
+          <div className="fg"><label>WhatsApp</label><input type="tel" required value={cf.w} onChange={e=>sCf({...cf,w:e.target.value})} placeholder="(49) 99999-9999"/></div>
           <div className="fg"><label>Assunto</label><input required value={cf.s} onChange={e=>sCf({...cf,s:e.target.value})} placeholder="Assunto"/></div>
           <div className="fg"><label>Mensagem</label><textarea required value={cf.m} onChange={e=>sCf({...cf,m:e.target.value})} placeholder="Sua mensagem..."/></div>
-          <button type="submit" className="fbt">Enviar</button></form>}
-      </div>
-      <div className="fb"><h3>🐉 Cadastro VIP</h3><p>Lineup, promos e acesso antecipado a ingressos.</p>
-        {rs?<div className="fok">✓ Cadastro realizado! Você é VIP.</div>:
-        <form onSubmit={e=>{e.preventDefault();sRs(true);sRf({n:"",e:"",p:"",c:"",i:"pista"});setTimeout(()=>sRs(false),5e3)}}>
-          <div className="fg"><label>Nome</label><input required value={rf.n} onChange={e=>sRf({...rf,n:e.target.value})} placeholder="Seu nome"/></div>
-          <div className="fg"><label>E-mail</label><input type="email" required value={rf.e} onChange={e=>sRf({...rf,e:e.target.value})} placeholder="seu@email.com"/></div>
-          <div className="fg"><label>WhatsApp</label><input type="tel" required value={rf.p} onChange={e=>sRf({...rf,p:e.target.value})} placeholder="(49) 99999-9999"/></div>
-          <div className="fg"><label>Cidade</label><input required value={rf.c} onChange={e=>sRf({...rf,c:e.target.value})} placeholder="Lages, SC"/></div>
-          <div className="fg"><label>Interesse</label><select value={rf.i} onChange={e=>sRf({...rf,i:e.target.value})}><option value="pista">Pista</option><option value="premium">Premium</option><option value="camarote">Mesas & Camarotes</option><option value="parceria">Parceria</option><option value="imprensa">Imprensa</option></select></div>
-          <button type="submit" className="fbt">Quero ser VIP</button></form>}
+          <button type="submit" className="fbt">Enviar Mensagem</button>
+        </form>}
       </div>
     </div>
   </div></section>);
@@ -403,7 +414,7 @@ function Forms(){
 
 function Footer(){
   return(<footer className="foot">
-    <div style={{fontSize:22,marginBottom:10}}>🐉</div>
+    <div style={{fontSize:22,marginBottom:10}}>ðŸ‰</div>
     <div className="fl">WARUNG <span className="w">TOUR</span> LAGES</div>
     <p style={{fontSize:10,color:"var(--txt3)",marginBottom:16,letterSpacing:3}}>O TEMPLO NA SERRA CATARINENSE</p>
     <div className="flinks">
@@ -412,12 +423,25 @@ function Footer(){
       <a href={W.e26.ticketUrl} target="_blank" rel="noopener noreferrer">VRC Tickets</a>
       <a href={W.e26.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp VIP</a>
     </div>
-    <p style={{fontSize:10,color:"var(--txt4)"}}>© 2026 Warung Tour Lages. Todos os direitos reservados.</p>
+    <p style={{fontSize:10,color:"var(--txt4)"}}>Â© 2026 Warung Tour Lages. Todos os direitos reservados.</p>
   </footer>);
 }
 
 export default function App(){
   const [s,sS]=useState(false);
+
+  // Facebook Pixel initialization
+  useEffect(()=>{
+    // FB Pixel - replace YOUR_PIXEL_ID with your actual pixel ID
+    const pixelScript = document.createElement("script");
+    pixelScript.innerHTML = FB_PIXEL + `fbq('init', '242361878243506'); fbq('track', 'PageView');`;
+    document.head.appendChild(pixelScript);
+    // noscript fallback
+    const ns = document.createElement("noscript");
+    ns.innerHTML = '<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=242361878243506&ev=PageView&noscript=1"/>';
+    document.body.appendChild(ns);
+  },[]);
+
   useEffect(()=>{const fn=()=>sS(window.scrollY>50);window.addEventListener("scroll",fn);return()=>window.removeEventListener("scroll",fn)},[]);
-  return(<><style>{css}</style><div><div className="grain"/><Nav s={s}/><Hero/><Cd/><Story/><div className="div"/><Lineup/><div className="div"/><Gallery/><Editions/><div className="div"/><Tickets/><Forms/><Footer/></div></>);
+  return(<><style>{css}</style><div><div className="grain"/><Nav s={s}/><Hero/><Cd/><Story/><div className="div"/><Lineup/><div className="div"/><Gallery/><Editions/><div className="div"/><Tickets/><ContactForm/><Footer/></div></>);
 }
