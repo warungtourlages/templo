@@ -308,11 +308,9 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 `;
 
 function Cd(){
-  const [t,sT]=useState({d:0,h:0,m:0,s:0});
-  useEffect(()=>{const tg=new Date("2027-03-27T15:00:00-03:00").getTime();const tk=()=>{const d=Math.max(0,tg-Date.now());sT({d:Math.floor(d/864e5),h:Math.floor(d%864e5/36e5),m:Math.floor(d%36e5/6e4),s:Math.floor(d%6e4/1e3)})};tk();const i=setInterval(tk,1e3);return()=>clearInterval(i)},[]);
   return(<div className="cds">
-    <div className="cds-label">⏳ Contagem Regressiva — 27.03.2027</div>
-    {[["d","Dias"],["h","Horas"],["m","Min"],["s","Seg"]].map(([k,l],i)=>(<div key={k} style={{display:"flex",alignItems:"center",gap:i<3?20:0}}><div className="cdi"><div className="n">{String(t[k]).padStart(2,"0")}</div><div className="l">{l}</div></div>{i<3&&<span className="cdsep">:</span>}</div>))}
+    <div className="cds-label">⏳ Contagem Regressiva — Em Breve</div>
+    {[["XXX","Dias"],["XX","Horas"],["XX","Min"],["XX","Seg"]].map(([n,l],i)=>(<div key={i} style={{display:"flex",alignItems:"center",gap:i<3?20:0}}><div className="cdi"><div className="n">{n}</div><div className="l">{l}</div></div>{i<3&&<span className="cdsep">:</span>}</div>))}
   </div>);
 }
 
@@ -325,13 +323,13 @@ function Nav({s}){
 
 function Hero(){
   return(<section className="hero" id="home"><div className="hero-img" style={{backgroundImage:`url(${IMG.heroBg})`}}/><div className="hc">
-    <div className="hpill"><span className="dot"/> Save the Date — 27 de Março de 2027</div>
+    <div className="hpill"><span className="dot"/> Save the Date — Março de 2027</div>
     <h1 className="hh1"><span className="l1">WARUNG</span><span className="l2">TOUR LAGES</span></h1>
     <p className="hsub">O Templo na Serra Catarinense</p>
     <div className="savedate">
       <div className="sd-label">Save the Date</div>
       <div className="sd-blocks">
-        <div className="sd-block"><div className="big">27</div><div className="small">Sábado</div></div>
+        <div className="sd-block"><div className="big">XX</div><div className="small">A Revelar</div></div>
         <div className="sd-divider"/>
         <div className="sd-block"><div className="big">MAR</div><div className="small">Março</div></div>
         <div className="sd-divider"/>
@@ -343,7 +341,7 @@ function Hero(){
       <div className="mi"><div className="lab">Local</div><div className="val">A Confirmar</div></div>
       <div className="mi"><div className="lab">Lineup</div><div className="val soon">Em Breve</div></div>
     </div>
-    <div className="hbtns"><a href="#contato" className="bf">Cadastre-se para Saber Primeiro</a><a href="#galeria-2026" className="bgh">Veja como foi 2026</a></div>
+    <div className="hbtns"><a href="#contato" className="bf">Cadastre-se para Saber Primeiro</a><a href="#galeria-completa" className="bgh">Veja como foi 2026</a></div>
   </div><div style={{position:"absolute",bottom:28,left:"50%",transform:"translateX(-50%)",zIndex:2,animation:"bob 2.5s ease-in-out infinite"}}><span style={{display:"block",width:1,height:36,background:"linear-gradient(var(--txt3),transparent)",margin:"0 auto 5px"}}/><small style={{fontSize:8,letterSpacing:3,textTransform:"uppercase",color:"var(--txt3)"}}>Scroll</small></div></section>);
 }
 
@@ -355,7 +353,7 @@ function Story(){
       <p>Para o povo balinês, Warung significa "casa". O Warung Beach Club, de Itajaí (SC), é referência mundial na música eletrônica.</p>
       <p>Desde 2016, o Warung Tour Lages leva a essência do Templo para a Serra Catarinense. Em 2022, após a pandemia, foi o reencontro. Em 2026, após 4 anos de espera, foi a consagração — uma noite inesquecível no Parque de Exposições Conta Dinheiro.</p>
       <div className="shl"><p>"O Templo retornou pra Serra Catarinense com toda a sua magia, vibe e identidade. E já estamos preparando o próximo capítulo dessa história."</p></div>
-      <p>Em <strong>27 de março de 2027</strong>, o Templo volta à Serra Catarinense. Save the date e cadastre-se para receber lineup, local e acesso antecipado a ingressos em primeira mão.</p>
+      <p>Em <strong>março de 2027</strong>, o Templo volta à Serra Catarinense. Save the date e cadastre-se para receber a data oficial, lineup e acesso antecipado a ingressos em primeira mão.</p>
     </div>
     <div className="simgs">
       <div className="simg"><img src={IMG.historiaPublico2022} alt="Público"/><div className="il">Público vibrando</div></div>
@@ -471,7 +469,7 @@ function Editions(){
     <div className="tlg">
       {W.history.map((ed,i)=>(<div key={i} className="tlc"><div className="y">{ed.year}</div><div className="b">{ed.badge}</div><div className="v">📍 {ed.venue}</div><div className="ch">{ed.lineup.map((d,j)=><span key={j} className="cp">{d}</span>)}</div></div>))}
       <div className="tlc" style={{borderColor:"rgba(232,83,28,.3)",background:"linear-gradient(135deg,rgba(232,83,28,.05),var(--bg3))"}}>
-        <div className="y">2027</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>Save the Date — 27.03</div><div className="v">📍 A Confirmar</div>
+        <div className="y">2027</div><div className="b" style={{color:"var(--sun1)",borderColor:"var(--sun1)"}}>Save the Date — Março</div><div className="v">📍 A Confirmar</div>
         <div className="ch"><span className="cp" style={{color:"var(--sun2)"}}>Lineup em breve</span></div>
       </div>
     </div>
