@@ -318,7 +318,7 @@ function Cd(){
 
 function Nav({s}){
   const [m,sM]=useState(false);
-  const lk=[["#historia","História"],["#lineup-2026","Lineup 2026"],["#galeria-2026","Galeria"],["#galeria-completa","Baixar Fotos"],["#edicoes","Edições"],["#contato","Contato"]];
+  const lk=[["#historia","História"],["#lineup-2026","Lineup 2026"],["#galeria-completa","Galeria"],["#edicoes","Edições"],["#contato","Contato"]];
   return(<><nav className={`topnav ${s?"s":""}`}><div className="logo" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}><span style={{fontSize:16}}>🐉</span> WARUNG <span className="w">TOUR</span> LAGES</div><div className="navl">{lk.map(([h,t])=><a key={h} href={h}>{t}</a>)}<a href="#contato" className="ctab">Cadastre-se</a></div><button className="mobb" onClick={()=>sM(true)}>☰</button></nav>
   {m&&<div className="mobm"><button className="cx" onClick={()=>sM(false)}>✕</button>{lk.map(([h,t])=><a key={h} href={h} onClick={()=>sM(false)}>{t}</a>)}<a href="#contato" onClick={()=>sM(false)} className="bf" style={{marginTop:10}}>Cadastre-se</a></div>}</>);
 }
@@ -389,21 +389,6 @@ function Lineup2026(){
         </div>
       ))}
       <div className="lusup">{support.map((dj,i)=>(<div key={i} className="luc"><div className="lucpw"><img src={IMG[dj.img]} alt={dj.name}/></div><div className="lucb"><div className="tag">{dj.tag}</div><div className="nm">{dj.name}</div><div className="or">{dj.origin}</div><div className="ds">{dj.desc}</div></div></div>))}</div>
-    </div>
-  </div></section>);
-}
-
-function Gallery2026(){
-  return(<section className="sec sec-d" id="galeria-2026"><div className="wrap">
-    <div className="sh"><div className="stag">Edição 2026</div><h2 className="st">Galeria <em>2026 em Fotos</em></h2><p className="sd">A noite que ficou gravada na memória de todos que estavam lá</p></div>
-    <div className="g26-grid">{W.gallery2026.map((item,i)=>(
-      <div key={i} className="g26-item">
-        <img src={IMG[item.id]} alt={item.caption}/>
-        <div className="go"><div className="gc">{item.caption}</div><div className="gy">{item.year}</div></div>
-      </div>
-    ))}</div>
-    <div style={{textAlign:"center",marginTop:36}}>
-      <a href="#galeria-completa" className="bf" style={{padding:"14px 36px",fontSize:11}}>📥 Ver galeria completa e baixar fotos</a>
     </div>
   </div></section>);
 }
@@ -541,5 +526,5 @@ export default function App(){
   },[]);
 
   useEffect(()=>{const fn=()=>sS(window.scrollY>50);window.addEventListener("scroll",fn);return()=>window.removeEventListener("scroll",fn)},[]);
-  return(<><style>{css}</style><div><div className="grain"/><Nav s={s}/><Hero/><Cd/><Story/><div className="div"/><Lineup2026/><div className="div"/><Gallery2026/><GaleriaCompleta/><Editions/><div className="div"/><ContactForm/><Footer/></div></>);
+  return(<><style>{css}</style><div><div className="grain"/><Nav s={s}/><Hero/><Cd/><Story/><div className="div"/><Lineup2026/><div className="div"/><GaleriaCompleta/><Editions/><div className="div"/><ContactForm/><Footer/></div></>);
 }
